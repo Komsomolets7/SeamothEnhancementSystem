@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A2CD97B-3DA1-4EA8-B4E3-61E23FF153EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SeamothEnhancementSystem</RootNamespace>
+    <AssemblyName>SeamothEnhancementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>D:\Games\Subnautica 65786\BepInEx\core\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="0Harmony-1.2.0.1">
+      <HintPath>D:\Games\Subnautica 65786\Subnautica_Data\Managed\0Harmony-1.2.0.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>D:\Games\Subnautica 65786\Subnautica_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>D:\Games\Subnautica 65786\Subnautica_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="QModInstaller">
+      <HintPath>D:\Games\Subnautica 65786\BepInEx\plugins\QModManager\QModInstaller.dll</HintPath>
+    </Reference>
+    <Reference Include="SMLHelper">
+      <HintPath>D:\Games\Subnautica 65786\QMods\Modding Helper\SMLHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Stats Core">
+      <HintPath>D:\Games\Subnautica 65786\QMods\Stats Core\Stats Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>D:\Games\Subnautica 65786\Subnautica_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Games\Subnautica 65786\Subnautica_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\Games\Subnautica 65786\Subnautica_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>D:\Games\Subnautica 65786\Subnautica_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>D:\Games\Subnautica 65786\Subnautica_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Games\Subnautica 65786\Subnautica_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>D:\Games\Subnautica 65786\Subnautica_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:\Games\Subnautica 65786\Subnautica_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\Config.cs" />
+    <Compile Include="ManageGUI\ManageAllGUIElements.cs" />
+    <Compile Include="ManageGUI\ManageBackgroundImg.cs" />
+    <Compile Include="ManageGUI\ManageBatteryHelpers.cs" />
+    <Compile Include="ManageGUI\ManageBatteryMain.cs" />
+    <Compile Include="ManageGUI\ManageCruiseIcons.cs" />
+    <Compile Include="ManageGUI\ManageCruiseTxt.cs" />
+    <Compile Include="ManageGUI\ManageGearsIcons.cs" />
+    <Compile Include="ManageGUI\ManageGearTxt.cs" />
+    <Compile Include="ManageGUI\ManageHealthTxt.cs" />
+    <Compile Include="ManageGUI\ManageKmhTxt.cs" />
+    <Compile Include="ManageGUI\ManageLightIcons.cs" />
+    <Compile Include="ManageGUI\ManageModeIcons.cs" />
+    <Compile Include="ManageGUI\ManagePowerTxt.cs" />
+    <Compile Include="ManageGUI\ManageSpeedTxt.cs" />
+    <Compile Include="ManageGUI\ManageTemperTxt.cs" />
+    <Compile Include="ManageGUI\PrepareGUIObjects.cs" />
+    <Compile Include="ManageGUI\PrepareGUISprite.cs" />
+    <Compile Include="ManageGUI\PrepareGUITxt.cs" />
+    <Compile Include="InGame\MonitorBatteryCount.cs" />
+    <Compile Include="InGame\MonitorCruiseKey.cs" />
+    <Compile Include="InGame\MonitorGearKeys.cs" />
+    <Compile Include="InGame\MonitorHealthKey.cs" />
+    <Compile Include="InGame\MonitorLightBeamKey.cs" />
+    <Compile Include="InGame\MonitorModeKey.cs" />
+    <Compile Include="InGame\MonitorPowerKey.cs" />
+    <Compile Include="InGame\MonitorReloadKey.cs" />
+    <Compile Include="InGame\SeaglideMapControlFix.cs" />
+    <Compile Include="InGame\ToggleLightBeam.cs" />
+    <Compile Include="MainPatcher.cs" />
+    <Compile Include="ManageGUI\DisplayPrompts.cs" />
+    <Compile Include="Modules\ElectricalEnhancement.cs" />
+    <Compile Include="Modules\ElectronicEnhancement.cs" />
+    <Compile Include="InfoObjects\OtherModsInfo.cs" />
+    <Compile Include="Modules\MechanicalEnhancement.cs" />
+    <Compile Include="Modules\SeamothEnhancementSystemModule.cs" />
+    <Compile Include="InfoObjects\SeamothInfo.cs" />
+    <Compile Include="InfoObjects\GearInfo.cs" />
+    <Compile Include="Modules\SeamothLink.cs" />
+    <Compile Include="Options\Options.cs" />
+    <Compile Include="Patches\SeaMoth_Start_Patch.cs" />
+    <Compile Include="Patches\ToggleLights_CheckLightToggle_Patch.cs" />
+    <Compile Include="Patches\GameInput_GetMoveDirection_Patch.cs" />
+    <Compile Include="Patches\Player_Update_Patch.cs" />
+    <Compile Include="Patches\SeaMoth_Update_Patch.cs" />
+    <Compile Include="Patches\uGUI_SeamothHUD_Update_Patch.cs" />
+    <Compile Include="Patches\Vehicle_ConsumeEngineEnergy_Patch.cs" />
+    <Compile Include="Patches\Vehicle_Start_Patch.cs" />
+    <Compile Include="Patches\Vehicle_Update_Patch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mod.json" />
+    <None Include="Assets\seamothguibundle" />
+    <None Include="Assets\seamothguibundle.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\ElectricalEnhancement.png" />
+    <Content Include="Assets\ElectronicEnhancement.png" />
+    <Content Include="Assets\MechanicalEnhancement.png" />
+    <Content Include="Assets\SeamothEnhancementSystemModule.png" />
+    <Content Include="Assets\SeamothLink.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(TargetPath)" "D:\Games\Subnautica 65786\QMods\$(ProjectName)\" /y /r
+xcopy "$(ProjectDir)mod.json" "D:\Games\Subnautica 65786\QMods\$(ProjectName)\" /y /r
+xcopy "$(ProjectDir)Assets\SeamothEnhancementSystemModule.png" "D:\Games\Subnautica 65786\QMods\$(ProjectName)\Assets\" /y /r
+xcopy "$(ProjectDir)Assets\ElectricalEnhancement.png" "D:\Games\Subnautica 65786\QMods\$(ProjectName)\Assets\" /y /r
+xcopy "$(ProjectDir)Assets\ElectronicEnhancement.png" "D:\Games\Subnautica 65786\QMods\$(ProjectName)\Assets\" /y /r
+xcopy "$(ProjectDir)Assets\MechanicalEnhancement.png" "D:\Games\Subnautica 65786\QMods\$(ProjectName)\Assets\" /y /r
+xcopy "$(ProjectDir)Assets\SeamothLink.png" "D:\Games\Subnautica 65786\QMods\$(ProjectName)\Assets\" /y /r
+xcopy "$(ProjectDir)Assets\seamothguibundle" "D:\Games\Subnautica 65786\QMods\$(ProjectName)\Assets\" /y /r
+xcopy "$(ProjectDir)Assets\seamothguibundle.manifest" "D:\Games\Subnautica 65786\QMods\$(ProjectName)\Assets\" /y /r</PostBuildEvent>
+  </PropertyGroup>
+</Project>

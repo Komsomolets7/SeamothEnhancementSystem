@@ -1,0 +1,16 @@
+{
+  "Id": "SeamothEnhancementSystem",
+  "DisplayName": "Seamoth Enhancement System",
+  "Author": "Mimes",
+  "Version": "0.0.9",
+  "Requires": [],
+  "LoadBefore": [],
+  "LoadAfter": [ "TorpedoImprovements", "Rm_VehiclesImproved", "Rm_VehicleLightsImproved", "SeaglideMapControls" ],
+  "AssemblyName": "SeamothEnhancementSystem.dll",
+  "EntryMethod": "SeamothEnhancementSystem.MainPatcher.Patch",
+  "Config": {},
+  "Dependencies": [
+    "SMLHelper"
+  ],
+  "Enable": true
+}

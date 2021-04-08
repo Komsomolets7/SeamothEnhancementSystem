@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 1395356629
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f39d693a56179fe39fb0da6749ce22ef
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cb3f6df5cbc4a2990c44c2787bc9553a
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Resources/cruise_control_gray_100x100.png
+- Assets/Resources/background_343x104.png
+- Assets/Resources/light_high_on_100x100.png
+- Assets/Resources/cogs_yellow_100x100.png
+- Assets/Resources/cogs_gray_100x100.png
+- Assets/Resources/battery_slot_100x100.png
+- Assets/Resources/battery_arrows_100x100.png
+- Assets/Resources/mode_turbo_100x100.png
+- Assets/Resources/piloting_128x128.png
+- Assets/Resources/cogs_red_100x100.png
+- Assets/Resources/battery_slot_gray_100x100.png
+- Assets/Resources/cruise_control_on_100x100.png
+- Assets/Resources/light_gray_100x100.png
+- Assets/Resources/light_low_on_100x100.png
+- Assets/Resources/battery_unit_100x100.png
+- Assets/Resources/cruise_control_off_100x100.png
+- Assets/Resources/battery_in_100x100.png
+- Assets/Resources/light_low_off_100x100.png
+- Assets/Resources/cogs_blue_100x100.png
+- Assets/Resources/battery_out_100x100.png
+- Assets/Resources/light_high_off_100x100.png
+- Assets/Resources/mode_green_100x100.png
+- Assets/Resources/mode_gray_100x100.png
+Dependencies: []
